@@ -4,6 +4,7 @@ const serverless = require("serverless-http");
 const app = express();
 const router = express.Router();
 
+
 router.get("/sem3", (req, res) => {
   res.json([
     {
@@ -300,7 +301,9 @@ router.get("/sem4", (req, res) => {
       __v: 0,
     },
   ]);
-});
+
+  
+
 
 app.use(`/.netlify/functions/api`, router);
 
